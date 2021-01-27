@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "lista.h"
 
@@ -31,3 +32,12 @@ for(p=l; p!=NULL;p=p->prox){
 
 
 };
+
+int vazia(Lista* l){
+    if(l==NULL){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
