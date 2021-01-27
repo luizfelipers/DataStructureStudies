@@ -19,6 +19,11 @@ int main()
     lista = inserir_lista(lista,10);
     lista = inserir_lista(lista,30);
     lista = inserir_lista(lista,40);
+    lista = inserir_lista(lista,25);
+    lista = inserir_lista(lista,22);
+    lista = inserir_lista(lista,49);
+    imprimir_lista(lista);
+
 
     
     return 0;
