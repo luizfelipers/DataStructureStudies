@@ -6,5 +6,7 @@ typedef struct lista Lista;
 Lista* criar_lista();
 
 //função que insere no início da Lista
-
 Lista* inserir_lista(Lista* l, int i);
+
+//função que imprime a lista
+void imprimir_lista(Lista* l);
