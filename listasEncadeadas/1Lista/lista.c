@@ -10,7 +10,7 @@ struct lista{
 
 Lista* criar_lista(){
     return NULL;
-}
+};
 //implementação que insere novo nó na lista através de dalocação dinâmica
 Lista* inserir_lista(Lista* l, int i){
     Lista* novo = (Lista*)malloc(sizeof(Lista));
@@ -19,3 +19,15 @@ Lista* inserir_lista(Lista* l, int i){
     novo -> prox = l;
     return novo;
 }
+
+void imprimir_lista(Lista* l){
+
+//criação de variável auxiliar para percorrer a lista
+Lista* p;
+//laço para percorrer a lista
+for(p=l; p!=NULL;p=p->prox){
+    printf("%d \n", p-> info);
+}
+
+
+};
