@@ -1,3 +1,11 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "lista.h"
@@ -14,6 +22,7 @@ int main()
     //cria lista vazia
     lista = criar_lista();
     
+    //verificando conteúdo da lista antes da inserção de dados
     if(vazia(lista)){
         printf("Lista vazia! \n");
     }
@@ -30,11 +39,37 @@ int main()
     lista = inserir_lista(lista,49);
     imprimir_lista(lista);
 
+//verificando o conteúdo da lista após inserção de dados
  if(vazia(lista)){
         printf("Lista vazia! \n");
     }
     else{
-        printf("Lista NÃO está vazia");
+        printf("Lista NÃO está vazia \n ");
+    }
+    
+    
+    //declaração de elemento a ser buscado na lista
+    int elemento = 10;
+    
+    
+    //verificação se elemento declarado acima está contido na lista
+    //a partir da função criada para buscar a lista.
+    if(buscar_lista(lista, elemento) == NULL){
+        printf("Não encontrou o elemento buscado: %d \n", elemento);
+    }
+    else{
+        printf("Encontrou o elemento buscado: %d \n", elemento);
+    }
+    
+    
+    //declaração de elemento não contido na lista
+    int elemento2 = 12;
+    //busca por elemento não contido na lista
+    if(buscar_lista(lista, elemento2) == NULL){
+        printf("Não encontrou o elemento buscado: %d \n", elemento2);
+    }
+    else{
+        printf("Encontrou o elemento buscado: %d \n", elemento2);
     }
     
     
