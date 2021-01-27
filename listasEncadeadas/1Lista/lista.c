@@ -41,3 +41,17 @@ int vazia(Lista* l){
         return 0;
     }
 }
+
+//função que realiza busca por elemento passado por referência, dentro de uma lista
+Lista* buscar_lista(Lista* l, int v){
+    Lista* p;
+    
+    for(p=l;p!=NULL;p=p->prox){
+        if(p->info == v){
+            return p;
+        }
+        
+    }
+    return NULL;
+   
+}
