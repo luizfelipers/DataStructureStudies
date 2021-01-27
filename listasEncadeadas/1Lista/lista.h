@@ -10,3 +10,6 @@ Lista* inserir_lista(Lista* l, int i);
 
 //função que imprime a lista
 void imprimir_lista(Lista* l);
+
+//verifica se a lista está vazia
+int vazia(Lista* l);
