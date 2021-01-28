@@ -55,3 +55,33 @@ Lista* buscar_lista(Lista* l, int v){
     return NULL;
    
 }
+
+Lista* remover(Lista* l, int v){
+    Lista* ant = NULL; //ponteiro para o elemento anterior
+    Lista* p = l; //ponteiro para percorrer a lista
+    
+    while(p != NULL && p->info != v){
+        
+        ant = p;
+        p = p->prox;
+    }
+    //se ponteiro retornar Nulo(não encontrar o elemento a ser removido), retorna  a lista sem modificações
+    if(p == NULL)
+        return l;
+        
+    //remoçao do inicio da lista
+    if(ant == NULL){
+          l = p->prox;
+    }
+      
+        //remove do meio da lista
+    else{
+        //ponteiro do nó anterior para o próximo elemento
+        //passa a apontar para o elemento seguinte do elemento excluidi
+        ant -> prox = p -> prox;
+    }
+    free(p);
+    return l;
+  
+    
+};
