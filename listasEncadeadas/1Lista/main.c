@@ -69,6 +69,23 @@ int main()
     lista = remover(lista, 20);
     imprimir_lista(lista);
     
+  //  liberar(lista);
+    //impressão da lista, após a lista ter sido destruída
+    imprimir_lista(lista);
     
+    
+    //COMPARAÇÃO DE LISTAS
+    
+    Lista* lista2;
+    lista2 = criar_lista();
+     lista = inserir_lista(lista,10);
+    lista = inserir_lista(lista,30);
+    lista = inserir_lista(lista,40);
+    lista = inserir_lista(lista,25);
+    lista = inserir_lista(lista,22);
+    lista = inserir_lista(lista,49);
+    lista = inserir_lista(lista,20);
+    
+    printf("Iguais? %d \n", compara_lista(lista, lista2));
     return 0;
 }
