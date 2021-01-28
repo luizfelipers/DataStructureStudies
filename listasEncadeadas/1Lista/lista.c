@@ -85,3 +85,33 @@ Lista* remover(Lista* l, int v){
   
     
 };
+
+void liberar(Lista* l){
+    Lista* p = l;
+    while(p != NULL){
+        Lista* t = p->prox;
+        free(p);
+        p = t;
+    }
+}
+
+int compara_lista(Lista* l1, Lista* l2){
+    
+    //ponteiros para percorrerem as listas
+    Lista* p1;
+    Lista* p2;
+    
+    while( p1!= NULL, p2!=NULL){
+        
+        if(p1->info != p2-> info)
+            return 0;
+        p1 = p1->prox;
+        p2 = p2->prox;
+    }
+    
+    return p1 ==p2;
+    
+    
+    
+    
+}
