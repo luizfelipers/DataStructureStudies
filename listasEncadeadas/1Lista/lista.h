@@ -16,3 +16,7 @@ int vazia(Lista* l);
 
 //busca elementos na Lista
 Lista* buscar_lista(Lista* l, int v);
+
+//remoção de elementos da Lista
+
+Lista* remover(Lista* l, int v);
