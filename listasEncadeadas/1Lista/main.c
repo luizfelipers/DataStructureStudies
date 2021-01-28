@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "lista.h"
@@ -37,6 +29,7 @@ int main()
     lista = inserir_lista(lista,25);
     lista = inserir_lista(lista,22);
     lista = inserir_lista(lista,49);
+    lista = inserir_lista(lista,20);
     imprimir_lista(lista);
 
 //verificando o conteúdo da lista após inserção de dados
@@ -71,6 +64,10 @@ int main()
     else{
         printf("Encontrou o elemento buscado: %d \n", elemento2);
     }
+    
+    //remove item numero 20
+    lista = remover(lista, 20);
+    imprimir_lista(lista);
     
     
     return 0;
