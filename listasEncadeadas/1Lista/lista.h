@@ -20,3 +20,11 @@ Lista* buscar_lista(Lista* l, int v);
 //remoção de elementos da Lista
 
 Lista* remover(Lista* l, int v);
+
+//destruição da lista, liberando todos os elementos
+
+void liberar(Lista* l);
+
+//função que compara duas listas
+int compara_lista(Lista* l1, Lista* l2);
+
