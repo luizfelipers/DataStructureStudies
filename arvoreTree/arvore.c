@@ -45,3 +45,12 @@ Arv* liberar(Arv* a){
     }
     return NULL;
 }
+
+int pertence(Arv* a, char c){
+    if(vazia(a))
+        return 0;
+    return (a -> info == c) || pertence(a->esq, c) || pertence(a->dir, c);
+    
+    
+    
+}
