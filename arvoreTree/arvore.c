@@ -34,3 +34,14 @@ void imprimir(Arv* a){
     }
 
 }
+
+
+Arv* liberar(Arv* a){
+    
+    if(!vazia(a)){
+        liberar(a->esq);
+        liberar(a->dir);
+        free(a);
+    }
+    return NULL;
+}
