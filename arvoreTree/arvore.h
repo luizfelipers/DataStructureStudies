@@ -9,3 +9,5 @@ int vazia(Arv* a);
 void imprimir(Arv* a);
 
 Arv* liberar(Arv* a);
+
+int pertence(Arv* a, char c);
