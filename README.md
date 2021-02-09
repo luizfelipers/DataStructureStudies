@@ -13,7 +13,7 @@ Content is organized as follows:
 - Queues
 - Trees
 - Graphs
-- Searches
+- Searches/Queries
 - Algo Complexity (Big O notation)
 
 ![](https://user-images.githubusercontent.com/26651389/105997597-8f3fab80-608a-11eb-9ddf-a3134877ecbb.jpg)
