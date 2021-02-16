@@ -20,18 +20,19 @@ int main()
         printf("Tem ligação de a para c");
     }
     
-  int i, j;
-  //conta o grau de cada vértice/nó
+  //loops through the whole matrix and prints the degree of each node(row in matrix)
+   int i, j;
     for(i=1; i<=5;i++){
-        grau = 0;
+        int grau = 0;
             for(j = 1; j <=5; j++){
-                if(matriz[i][j]==1){
-                    grau++
+                if(matriz1[i][j]==1){
+                    grau++;
                 }
             }
-      //A cada iteração, printa o grau do nó atual do loop
-            print("O nó %d tem grau %d \n ", i, grau)
+            //A cada iteração, printa o grau do nó atual do loop
+            printf("O nó %d tem grau %d \n ", i, grau);
     }
+    
       
   
     return 0;
