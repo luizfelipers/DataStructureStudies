@@ -20,6 +20,7 @@ int main()
         printf("Tem ligação de a para c");
     }
     
+  int i, j;
   //conta o grau de cada vértice/nó
     for(i=1; i<=5;i++){
         grau = 0;
