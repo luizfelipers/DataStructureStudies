@@ -28,6 +28,7 @@ int main()
                     grau++
                 }
             }
+      //A cada iteração, printa o grau do nó atual do loop
             print("O nó %d tem grau %d \n ", i, grau)
     }
       
