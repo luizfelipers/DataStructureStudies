@@ -28,7 +28,7 @@ int main()
                     grau++
                 }
             }
-            print("O nó tem grau", grau)
+            print("O nó %d tem grau %d \n ", i, grau)
     }
       
   
