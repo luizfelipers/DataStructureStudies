@@ -20,6 +20,17 @@ int main()
         printf("Tem ligação de a para c");
     }
     
-    
+  //conta o grau de cada vértice/nó
+    for(i=1; i<=5;i++){
+        grau = 0;
+            for(j = 1; j <=5; j++){
+                if(matriz[i][j]==1){
+                    grau++
+                }
+            }
+            print("O nó tem grau", grau)
+    }
+      
+  
     return 0;
 }
